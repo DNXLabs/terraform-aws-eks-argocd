@@ -12,13 +12,7 @@ resource "helm_release" "argocd" {
     value = false
   }
 
-  dynamic "set" {
-    for_each = var.helm_services[count.index].settings
-
-    content {
-      name  = set.key
-      value = set.value
-    }
-  }
-
+  values = [
+    yamlencode(var.helm_services[count.index].settings)
+  ]
 }

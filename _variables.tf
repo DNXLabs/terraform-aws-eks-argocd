@@ -5,12 +5,12 @@ variable "enabled" {
 }
 
 variable "helm_services" {
-  type = list(object({
-    name          = string
-    chart_version = string
-    release_name  = string
-    settings      = map(any)
-  }))
+  # type = list(object({
+  #   name          = string
+  #   chart_version = string
+  #   release_name  = string
+  #   settings      = map(any)
+  # }))
   default = [
     {
       name          = "argo-cd"
