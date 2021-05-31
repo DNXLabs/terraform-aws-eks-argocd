@@ -36,7 +36,7 @@ variable "create_namespace" {
 variable "namespace" {
   type        = string
   default     = "argocd"
-  description = "Kubernetes namespace to deploy ACK Helm chart."
+  description = "Kubernetes namespace to deploy Argo CD Helm chart."
 }
 
 variable "mod_dependency" {
