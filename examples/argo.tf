@@ -1,5 +1,5 @@
 module "argocd" {
-  source = "git::https://github.com/DNXLabs/terraform-aws-eks-argocd.git?ref=0.2.0"
+  source = "git::https://github.com/DNXLabs/terraform-aws-eks-argocd.git?ref=0.3.1"
 
   enabled = true
 
