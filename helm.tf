@@ -9,7 +9,7 @@ resource "helm_release" "argocd" {
 
   set {
     name  = "installCRDs"
-    value = false
+    value = true
   }
 
   values = [
