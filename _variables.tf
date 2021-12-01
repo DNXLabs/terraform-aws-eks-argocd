@@ -9,13 +9,13 @@ variable "helm_services" {
     {
       name          = "argo-cd"
       release_name  = "argo-cd"
-      chart_version = "3.2.3"
+      chart_version = "3.26.12"
       settings      = {}
     },
     {
       name          = "argo-rollouts"
       release_name  = "argo-rollouts"
-      chart_version = "0.5.2"
+      chart_version = "2.5.0"
       settings      = {}
     }
   ]
