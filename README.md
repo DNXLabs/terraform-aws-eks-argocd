@@ -67,7 +67,7 @@ You should get as an output:
 | create\_namespace | Whether to create Kubernetes namespace with name defined by `namespace`. | `bool` | `true` | no |
 | enabled | Variable indicating whether deployment is enabled. | `bool` | `true` | no |
 | helm\_chart\_repo | Argo CD repository name. | `string` | `"https://argoproj.github.io/argo-helm"` | no |
-| helm\_services | n/a | `list` | <pre>[<br>  {<br>    "chart_version": "3.2.3",<br>    "name": "argo-cd",<br>    "release_name": "argo-cd",<br>    "settings": {}<br>  },<br>  {<br>    "chart_version": "0.5.2",<br>    "name": "argo-rollouts",<br>    "release_name": "argo-rollouts",<br>    "settings": {}<br>  }<br>]</pre> | no |
+| helm\_services | n/a | `list` | <pre>[<br>  {<br>    "chart_version": "3.26.12",<br>    "name": "argo-cd",<br>    "release_name": "argo-cd",<br>    "settings": {}<br>  },<br>  {<br>    "chart_version": "2.5.0",<br>    "name": "argo-rollouts",<br>    "release_name": "argo-rollouts",<br>    "settings": {}<br>  }<br>]</pre> | no |
 | mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
 | namespace | Kubernetes namespace to deploy Argo CD Helm chart. | `string` | `"argocd"` | no |
 | settings | Additional settings which will be passed to the Helm chart values. | `map` | `{}` | no |
